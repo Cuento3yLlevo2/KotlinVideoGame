@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Saving Challenge</string>
+    <string name="easy_mode">Fácil</string>
+    <string name="normal_mode">Normal</string>
+    <string name="hard_mode">Difícil</string>
+    <string name="game_over_tip">¡Te has quedado sin monedas! Intenta evadir la comida la próxima vez</string>
+    <string name="game_over_title_text">Game Over</string>
+    <string name="player_wins_tip">¡Buen trabajo! Intenta conseguir más monedas la próxima vez</string>
+    <string name="player_wins_title_text">Reto completado</string>
+    <string name="player_wins_coinscount_title_text">Monedas conseguidas:</string>
+    <string name="image_view_cerdito_contento_desc">Cerdito contento por reto completado</string>
+    <string name="image_view_desc_imagen_de_moneda">Imagen de moneda</string>
+    <string name="image_view_desc_imagen_cerdito_derrotado">Imagen cerdito derrotado</string>
+    <string name="game_intro_how_to">Recolecta tantas monedas como puedas en un minuto. ¡Evita gastar tus ahorros en comida!</string>
+    <string name="imagen_cerdito">Imagen cerdito</string>
+    <string name="start_game_text">Jugar</string>
+    <string name="nave_de_el_cerdito">Nave del cerdito</string>
+</resources>

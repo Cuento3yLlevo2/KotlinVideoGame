@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bMainPlayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ivCerditoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/imagen_cerdito"
+        android:src="@drawable/cerdito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHowToPlay" />
+
+
+    <ImageView
+        android:id="@+id/ivUFOImage"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="114dp"
+        android:contentDescription="@string/nave_de_el_cerdito"
+        android:src="@drawable/ufo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHowToPlay" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGameMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/bMainPlayBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbEasyMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_button_easy_selector"
+            android:button="@android:color/transparent"
+            android:onClick="onRadioButtonClicked"
+            android:padding="20dp"
+            android:text="@string/easy_mode"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbNormalMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_button_normal_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:padding="20dp"
+            android:text="@string/normal_mode"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbHardMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_button_hard_selector"
+            android:button="@android:color/transparent"
+            android:onClick="onRadioButtonClicked"
+            android:padding="20dp"
+            android:text="@string/hard_mode"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvHowToPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="32dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="32dp"
+        android:text="@string/game_intro_how_to"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bMainPlayBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
